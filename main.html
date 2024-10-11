@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game | Rock, Paper and Scissor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body
+    style="background: linear-gradient(to right, #070f2b, #1b1a55, #535c91)"
+    class="m-0 p-0"
+  >
+    <div class="container mx-8 mb-10">
+      <div class="header mt-4 text-center h-40 p-4 mb-8 overflow-hidden">
+        <h1 class="heading text-4xl font-semibold text-[#fff] italic">
+          Rock, paper and Scissor!!
+        </h1>
+        <p
+          class="round-number mt-10 text-3xl font-semibold text-[#fff] italic"
+        ></p>
+      </div>
+      <div
+        class="plr-cds w-full flex justify-center align-center gap-x-40 mb-2"
+      >
+        <div class="card h-80">
+          <div
+            class="plr-usr w-72 h-4/5 bg-[#D7E4C0] rounded-lg flex flex-col align-center text-center p-6 mb-4"
+          >
+            <h2 class="text-2xl font-bold mb-6 italic">Player</h2>
+            <div
+              class="ic-cont flex justify-center align-center p-6 gap-x-8 mb-4"
+            >
+              <img
+                src="img/rock.png"
+                alt="rock"
+                class="rock w-14 h-14 cursor-pointer"
+              />
+              <img
+                src="img/paper.png"
+                alt="rock"
+                class="paper w-14 h-14 cursor-pointer"
+              />
+              <img
+                src="img/scissors.png"
+                alt="rock"
+                class="scissor w-14 h-14 cursor-pointer"
+              />
+            </div>
+            <p class="player-choice text-xl"></p>
+          </div>
+          <h3
+            class="points-player text-2xl font-bold text-[#fff] text-center"
+          ></h3>
+        </div>
+        <h2
+          class="winner w-40 text-center py-20 text-2xl font-semibold italic text-[#fff]"
+        ></h2>
+        <div class="card h-80">
+          <div
+            class="plr-comp w-72 h-4/5 bg-[#D7E4C0] rounded-lg flex flex-col align-center text-center p-6 mb-4"
+          >
+            <h2 class="text-2xl font-bold mb-6 italic">Computer</h2>
+            <div
+              class="ic-cont flex justify-center align-center p-6 gap-x-8 mb-4"
+            >
+              <img class="comp-img w-14 h-14" />
+            </div>
+            <p class="computer-choice text-xl"></p>
+          </div>
+          <h3
+            class="points-computer text-2xl font-bold text-[#fff] text-center"
+          ></h3>
+        </div>
+      </div>
+      <div class="play-button w-full h-full flex justify-center mb-20">
+        <button
+          class="btn text-xl font-bold rounded-md btn px-14 py-4 bg-[#D7E4C0]"
+        >
+          Play
+        </button>
+      </div>
+    </div>
+    <h2 class="text-xl text-center text-[#fff] mb-2">
+      Made with ❤️ by Sarthak Singh Tomar
+    </h2>
+    <p class="text-sm text-bold text-center text-[#fff] mb-10">
+      Copyright &copy; 2024.
+    </p>
+    <script src="rps.js"></script>
+  </body>
+</html>
